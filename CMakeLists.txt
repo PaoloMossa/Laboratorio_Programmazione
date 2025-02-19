@@ -6,4 +6,6 @@ set(CMAKE_CXX_STANDARD 20)
 add_executable(LabProgrammazione main.cpp
         Domain/Attivita.h
         Domain/AttivitaSemplice.cpp
-        Domain/AttivitaSemplice.h)
+        Domain/AttivitaSemplice.h
+        Persistence/GestoreFile.cpp
+        Persistence/GestoreFile.h)

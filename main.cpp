@@ -1,9 +1,13 @@
 #include <iostream>
 
+#include "Domain/Attivita.h"
+#include "Domain/AttivitaSemplice.h"
+
 // TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 int main() {
-
+    AttivitaSemplice a = AttivitaSemplice("Fare la spesa", false);
+    a.stampa();
     return 0;
 }
 

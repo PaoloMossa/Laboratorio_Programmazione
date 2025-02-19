@@ -61,6 +61,12 @@ build CMakeFiles/LabProgrammazione.dir/Domain/AttivitaSemplice.cpp.o: CXX_COMPIL
   OBJECT_DIR = CMakeFiles/LabProgrammazione.dir
   OBJECT_FILE_DIR = CMakeFiles/LabProgrammazione.dir/Domain
 
+build CMakeFiles/LabProgrammazione.dir/Persistence/GestoreFile.cpp.o: CXX_COMPILER__LabProgrammazione_unscanned_Debug /Users/paolomossa/CLionProjects/LabProgrammazione/Persistence/GestoreFile.cpp || cmake_object_order_depends_target_LabProgrammazione
+  DEP_FILE = CMakeFiles/LabProgrammazione.dir/Persistence/GestoreFile.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/LabProgrammazione.dir
+  OBJECT_FILE_DIR = CMakeFiles/LabProgrammazione.dir/Persistence
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target LabProgrammazione
@@ -69,7 +75,7 @@ build CMakeFiles/LabProgrammazione.dir/Domain/AttivitaSemplice.cpp.o: CXX_COMPIL
 #############################################
 # Link the executable LabProgrammazione
 
-build LabProgrammazione: CXX_EXECUTABLE_LINKER__LabProgrammazione_Debug CMakeFiles/LabProgrammazione.dir/main.cpp.o CMakeFiles/LabProgrammazione.dir/Domain/AttivitaSemplice.cpp.o
+build LabProgrammazione: CXX_EXECUTABLE_LINKER__LabProgrammazione_Debug CMakeFiles/LabProgrammazione.dir/main.cpp.o CMakeFiles/LabProgrammazione.dir/Domain/AttivitaSemplice.cpp.o CMakeFiles/LabProgrammazione.dir/Persistence/GestoreFile.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk
   OBJECT_DIR = CMakeFiles/LabProgrammazione.dir
   POST_BUILD = :

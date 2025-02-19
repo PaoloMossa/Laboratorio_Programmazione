@@ -1,0 +1,45 @@
+//
+// Created by Paolo Mossa on 19/02/25.
+//
+
+#ifndef ATTIVITA_H
+#define ATTIVITA_H
+#include <string>
+
+
+//Abstract class for a generic activity
+class Attivita {
+protected:
+    std::string descrizione;
+    bool completata;
+public:
+
+    explicit Attivita(const std::string& descrizione, bool completata = false) : descrizione(descrizione), completata(completata) {}
+
+
+    virtual void stampa() const = 0; // Print details
+    virtual std::string serializza() const = 0; // For saving to file
+
+    //Getter methods
+    std::string getDescrizione() const {
+        return descrizione;
+    }
+
+    bool isCompletata() const {
+        return completata;
+    }
+
+    //Setter method
+    void setCompletata(bool stato) {
+        completata = stato;
+    }
+    void setDescrizione(const std::string& nuovaDescrizione) {
+        descrizione = nuovaDescrizione;
+    }
+
+    virtual ~Attivita() = default; // Virtual destructor
+};
+
+
+
+#endif //ATTIVITA_H

@@ -43,3 +43,16 @@ std::list<Attivita*> GestoreFile::caricaDaFile() const {
     file.close();
     return attivitaList;
 }
+
+bool GestoreFile::salvaSuFile(const std::list<Attivita*>& attivitaList) const {
+    std::ofstream file(nomeFile);
+    if (!file.is_open()) {
+        std::cerr << "Errore nell'apertura del file per il salvataggio." << std::endl;
+        return false;
+    }
+    for (const auto& attivita : attivitaList) {
+        file << attivita->serializza() << std::endl;
+    }
+    file.close();
+    return true;
+}

@@ -19,6 +19,8 @@ public:
     GestoreFile(const std::string& nomeFile) : nomeFile(nomeFile) {}
 
     std::list<Attivita*> caricaDaFile() const;
+
+    bool salvaSuFile(const std::list<Attivita*>& attivitaList) const;
 };
 
 

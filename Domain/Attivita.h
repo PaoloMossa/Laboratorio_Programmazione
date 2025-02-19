@@ -21,6 +21,9 @@ public:
     virtual std::string serializza() const = 0; // For saving to file
 
     //Getter methods
+
+    virtual std::string getType() const = 0;
+
     std::string getDescrizione() const {
         return descrizione;
     }

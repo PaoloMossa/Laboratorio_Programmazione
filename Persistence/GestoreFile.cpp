@@ -3,7 +3,7 @@
 //
 
 #include "GestoreFile.h"
-//#include "../domain/AttivitaImportante.h"
+#include "../Domain/AttivitaImportante.h"
 #include <fstream>
 
 #include "../Domain/AttivitaSemplice.h"
@@ -12,7 +12,11 @@ std::unique_ptr<Attivita> GestoreFile::getAttivitaDaRiga(const std::string &riga
     std::unique_ptr<Attivita> attivita;
     if (type == "Semplice") {
         attivita = std::make_unique<AttivitaSemplice>("", false);
-    } else {
+    }
+    else if (type == "Importante") {
+        attivita = std::make_unique<AttivitaImportante>("", false);
+    }
+    else {
         std::cerr << "Tipo di attività non riconosciuto: " << type << std::endl;
         return nullptr;
     }

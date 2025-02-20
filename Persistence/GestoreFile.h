@@ -7,20 +7,22 @@
 #include <list>
 #include <string>
 
+#include "../Domain/ListaAttivita.h"
 
-class Attivita;
+class ListaAttivita;
 
 class GestoreFile {
 private:
     const std::string nomeFile;
-    Attivita* getAttivitaDaRiga(const std::string& riga, const std::string& type) const;
+
+    std::unique_ptr<Attivita> getAttivitaDaRiga(const std::string &riga, const std::string &type) const;
 public:
 
     GestoreFile(const std::string& nomeFile) : nomeFile(nomeFile) {}
 
-    std::list<Attivita*> caricaDaFile() const;
+    std::vector<std::unique_ptr<Attivita>> caricaDaFile() const;
 
-    bool salvaSuFile(const std::list<Attivita*>& attivitaList) const;
+    bool salvaSuFile(const std::vector<std::unique_ptr<Attivita>> &attivitaList) const;
 };
 
 

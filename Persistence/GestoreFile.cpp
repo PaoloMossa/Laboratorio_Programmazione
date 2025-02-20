@@ -6,23 +6,27 @@
 //#include "../domain/AttivitaImportante.h"
 #include <fstream>
 
-#include "../domain/AttivitaSemplice.h"
+#include "../Domain/AttivitaSemplice.h"
 
-Attivita* GestoreFile::getAttivitaDaRiga(const std::string& riga, const std::string& type) const {
+std::unique_ptr<Attivita> GestoreFile::getAttivitaDaRiga(const std::string &riga, const std::string &type) const {
+    std::unique_ptr<Attivita> attivita;
     if (type == "Semplice") {
-        return AttivitaSemplice::creaDaSerializzazione(riga);
-    } else if (type == "Importante") {
-//        return AttivitaImportante::creaDaSerializzazione(riga);
+        attivita = std::make_unique<AttivitaSemplice>("", false);
+    } else {
+        std::cerr << "Tipo di attività non riconosciuto: " << type << std::endl;
+        return nullptr;
     }
-    return nullptr;
+    auto result = attivita->creaDaSerializzazione(riga);
+    return std::move(result);
 }
 
-std::list<Attivita*> GestoreFile::caricaDaFile() const {
-    std::list<Attivita*> attivitaList;
+std::vector<std::unique_ptr<Attivita>> GestoreFile::caricaDaFile() const {
+    auto attivitaList = std::make_unique<ListaAttivita>();
+
     std::ifstream file(nomeFile);
     if (!file.is_open()) {
         std::cerr << "Errore nell'apertura del file per il caricamento." << std::endl;
-        return attivitaList;
+        return attivitaList->getListaAttivita();
     }
 
     std::string riga;
@@ -33,18 +37,18 @@ std::list<Attivita*> GestoreFile::caricaDaFile() const {
             continue;
         }
         std::string tipo = riga.substr(0, pos);
-        Attivita* attivita = getAttivitaDaRiga(riga, tipo);
+        std::unique_ptr<Attivita> attivita = getAttivitaDaRiga(riga, tipo);
         if (attivita) {
-            attivitaList.push_back(attivita);
+            attivitaList->addAttivita(std::move(attivita));
         } else {
             std::cerr << "Errore nella deserializzazione di un'attività." << std::endl;
         }
     }
     file.close();
-    return attivitaList;
+    return attivitaList->getListaAttivita();
 }
 
-bool GestoreFile::salvaSuFile(const std::list<Attivita*>& attivitaList) const {
+bool GestoreFile::salvaSuFile(const std::vector<std::unique_ptr<Attivita>> &attivitaList) const {
     std::ofstream file(nomeFile);
     if (!file.is_open()) {
         std::cerr << "Errore nell'apertura del file per il salvataggio." << std::endl;

@@ -8,4 +8,6 @@ add_executable(LabProgrammazione main.cpp
         Domain/AttivitaSemplice.cpp
         Domain/AttivitaSemplice.h
         Persistence/GestoreFile.cpp
-        Persistence/GestoreFile.h)
+        Persistence/GestoreFile.h
+        Domain/ListaAttivita.cpp
+        Domain/ListaAttivita.h)

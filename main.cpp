@@ -2,12 +2,32 @@
 
 #include "Domain/Attivita.h"
 #include "Domain/AttivitaSemplice.h"
+#include "Domain/ListaAttivita.h"
 
 // TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 int main() {
+    /*
     AttivitaSemplice a = AttivitaSemplice("Fare la spesa", false);
+    auto test = std::make_unique<AttivitaSemplice>(a);
+
+    std::unique_ptr<Attivita> b = a.creaDaSerializzazione("prova;Fare la spesa;0");
+    ListaAttivita lista;
+    lista.addAttivita(std::move(b));
+    lista.addAttivita(std::move(test));
+    lista.stampa();
     a.stampa();
+*/
+
+    std::cout << std::endl << "Prova con GestoreFile" << std::endl;
+    GestoreFile gestore("prova.txt");
+//    gestore.salvaSuFile(lista.getListaAttivita());
+    auto listaCaricata = gestore.caricaDaFile();
+    ListaAttivita prova;
+    for (auto& attivita : listaCaricata) {
+        prova.addAttivita(std::move(attivita));
+    }
+    prova.stampa();
     return 0;
 }
 

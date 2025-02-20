@@ -11,7 +11,7 @@
 
 class AttivitaSemplice : public Attivita {
 public:
-    AttivitaSemplice(const std::string& descrizione, bool completata = false)
+    explicit AttivitaSemplice(const std::string& descrizione, bool completata = false)
         : Attivita(descrizione, completata) {}
 
     void stampa() const override;
@@ -20,8 +20,8 @@ public:
 
     std::string getType() const override;
 
-    //Factory Method statico per creare da riga serializzata
-    static AttivitaSemplice* creaDaSerializzazione(const std::string& riga);
+    //Factory Method statico per creare l'attività da riga serializzata
+    std::unique_ptr<Attivita> creaDaSerializzazione(const std::string &riga) override;
 };
 
 

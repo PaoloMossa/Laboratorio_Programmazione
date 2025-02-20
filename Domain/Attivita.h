@@ -19,6 +19,7 @@ public:
 
     virtual void stampa() const = 0; // Print details
     virtual std::string serializza() const = 0; // For saving to file
+    virtual std::unique_ptr<Attivita> creaDaSerializzazione(const std::string &riga) = 0; // For loading from file
 
     //Getter methods
 

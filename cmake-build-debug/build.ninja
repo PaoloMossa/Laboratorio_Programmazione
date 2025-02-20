@@ -79,6 +79,18 @@ build CMakeFiles/LabProgrammazione.dir/Domain/AttivitaImportante.cpp.o: CXX_COMP
   OBJECT_DIR = CMakeFiles/LabProgrammazione.dir
   OBJECT_FILE_DIR = CMakeFiles/LabProgrammazione.dir/Domain
 
+build CMakeFiles/LabProgrammazione.dir/Control/InputHandler.cpp.o: CXX_COMPILER__LabProgrammazione_unscanned_Debug /Users/paolomossa/CLionProjects/LabProgrammazione/Control/InputHandler.cpp || cmake_object_order_depends_target_LabProgrammazione
+  DEP_FILE = CMakeFiles/LabProgrammazione.dir/Control/InputHandler.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/LabProgrammazione.dir
+  OBJECT_FILE_DIR = CMakeFiles/LabProgrammazione.dir/Control
+
+build CMakeFiles/LabProgrammazione.dir/Control/TipoInput.cpp.o: CXX_COMPILER__LabProgrammazione_unscanned_Debug /Users/paolomossa/CLionProjects/LabProgrammazione/Control/TipoInput.cpp || cmake_object_order_depends_target_LabProgrammazione
+  DEP_FILE = CMakeFiles/LabProgrammazione.dir/Control/TipoInput.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/LabProgrammazione.dir
+  OBJECT_FILE_DIR = CMakeFiles/LabProgrammazione.dir/Control
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target LabProgrammazione
@@ -87,7 +99,7 @@ build CMakeFiles/LabProgrammazione.dir/Domain/AttivitaImportante.cpp.o: CXX_COMP
 #############################################
 # Link the executable LabProgrammazione
 
-build LabProgrammazione: CXX_EXECUTABLE_LINKER__LabProgrammazione_Debug CMakeFiles/LabProgrammazione.dir/main.cpp.o CMakeFiles/LabProgrammazione.dir/Domain/AttivitaSemplice.cpp.o CMakeFiles/LabProgrammazione.dir/Persistence/GestoreFile.cpp.o CMakeFiles/LabProgrammazione.dir/Domain/ListaAttivita.cpp.o CMakeFiles/LabProgrammazione.dir/Domain/AttivitaImportante.cpp.o
+build LabProgrammazione: CXX_EXECUTABLE_LINKER__LabProgrammazione_Debug CMakeFiles/LabProgrammazione.dir/main.cpp.o CMakeFiles/LabProgrammazione.dir/Domain/AttivitaSemplice.cpp.o CMakeFiles/LabProgrammazione.dir/Persistence/GestoreFile.cpp.o CMakeFiles/LabProgrammazione.dir/Domain/ListaAttivita.cpp.o CMakeFiles/LabProgrammazione.dir/Domain/AttivitaImportante.cpp.o CMakeFiles/LabProgrammazione.dir/Control/InputHandler.cpp.o CMakeFiles/LabProgrammazione.dir/Control/TipoInput.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk
   OBJECT_DIR = CMakeFiles/LabProgrammazione.dir
   POST_BUILD = :

@@ -6,6 +6,7 @@
 
 #include <iostream>
 
+//FIXME find a better way to print colored text, so that it is not dependent on the os
 void AttivitaImportante::stampa() const {
     std::cout << (completata ? "[X] " : "[ ] ") << "\033[32m" << descrizione << "\033[0m" << std::endl;
 }

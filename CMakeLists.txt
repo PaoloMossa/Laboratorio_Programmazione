@@ -12,4 +12,8 @@ add_executable(LabProgrammazione main.cpp
         Domain/ListaAttivita.cpp
         Domain/ListaAttivita.h
         Domain/AttivitaImportante.cpp
-        Domain/AttivitaImportante.h)
+        Domain/AttivitaImportante.h
+        Control/InputHandler.cpp
+        Control/InputHandler.h
+        Control/TipoInput.cpp
+        Control/TipoInput.h)

@@ -7,6 +7,32 @@
 #include "../Domain/AttivitaImportante.h"
 #include "../Domain/AttivitaSemplice.h"
 
+void InputHandler::modificaAttivita() {
+    std::string indice;
+    std::cout << "Inserire l'indice dell'attività che si vuole modificare: ";
+    std::cin >> indice;
+    std::optional<int> indiceOpt = stringToInt(indice);
+    if (!indiceOpt.has_value()) {
+        std::cerr << "Errore durante la conversione." << std::endl;
+        return;
+    }
+    int indiceInt = indiceOpt.value();
+    if (isValidIbdex(indiceInt))
+        listaAttivita.modificaAttivita(indiceInt);
+}
+
+bool InputHandler::isValidIbdex(int indice) {
+    if (indice < 0) {
+        std::cerr << "Error: Index cannot be negative." << std::endl;
+        return false;
+    }
+    if (indice >= listaAttivita.size()) {
+        std::cerr << "Error: Index is out of bounds. Must be less than " << listaAttivita.size() << "." << std::endl;
+        return false;
+    }
+    return true;
+}
+
 void InputHandler::handleInput(TipoInput input) {
     switch(input) {
         case TipoInput::Nuovo:
@@ -15,6 +41,9 @@ void InputHandler::handleInput(TipoInput input) {
             break;
         case TipoInput::Modifica:
             std::cout << "modifica" << std::endl;
+
+            modificaAttivita();
+
             break;
         case TipoInput::Rimuovi:
             std::cout << "rimuovi" << std::endl;
@@ -30,6 +59,7 @@ void InputHandler::handleInput(TipoInput input) {
     }
 }
 
+//FIXME The following method could be implemented in a Factoy Mehod object
 void InputHandler::nuovaAttivita() {
     std::string input;
     std::cout << "inserire tipo di attività (Semplice o Importante): ";
@@ -51,4 +81,22 @@ void InputHandler::nuovaAttivita() {
     std::getline(std::cin, input);
     nuovaAttivita->setDescrizione(input);
     listaAttivita.addAttivita(std::move(nuovaAttivita));
+}
+
+std::optional<int> InputHandler::stringToInt(const std::string& str) {
+    try {
+        size_t pos; // To check if the *entire* string was converted
+        int result = std::stoi(str, &pos); // Convert string to int
+        if (pos != str.length()) {
+            // If not the entire string was consumed, it's an error
+            return std::nullopt; // Indicate conversion failure
+        }
+        return result;
+    } catch (const std::invalid_argument&) {
+        // String cannot be converted to an integer
+        return std::nullopt; // Indicate conversion failure
+    } catch (const std::out_of_range&) {
+        // Integer is out of range for int
+        return std::nullopt; // Indicate conversion failure
+    }
 }

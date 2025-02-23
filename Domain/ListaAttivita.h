@@ -22,10 +22,16 @@ public:
 
     void addAttivita(std::unique_ptr<Attivita> attivita);
 
+    void modificaAttivita(int indice);
+
     void stampa() const {
         for (const auto& attivita : attivitaList) {
             attivita->stampa();
         }
+    }
+
+    int size() {
+        return attivitaList.size();
     }
 
     std::vector<std::unique_ptr<Attivita>> getListaAttivita() {

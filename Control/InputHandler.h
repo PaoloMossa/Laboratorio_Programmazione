@@ -14,8 +14,15 @@ private:
     GestoreFile &gestoreFile;
 
     void nuovaAttivita();
+
+    std::optional<int> stringToInt(const std::string &str);
+
+    void modificaAttivita();
+    bool isValidIbdex(int indice);
 public:
     InputHandler(ListaAttivita &listaAttivita, GestoreFile &gestoreFile) : listaAttivita(listaAttivita), gestoreFile(gestoreFile) {}
+
+
 
     void handleInput(TipoInput input);
 

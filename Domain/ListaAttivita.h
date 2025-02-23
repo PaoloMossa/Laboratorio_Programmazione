@@ -25,7 +25,6 @@ public:
     void stampa() const {
         for (const auto& attivita : attivitaList) {
             attivita->stampa();
-            std::cout << std::endl;
         }
     }
 

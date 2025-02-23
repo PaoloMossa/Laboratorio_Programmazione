@@ -12,6 +12,8 @@ class InputHandler {
 private:
     ListaAttivita &listaAttivita;
     GestoreFile &gestoreFile;
+
+    void nuovaAttivita();
 public:
     InputHandler(ListaAttivita &listaAttivita, GestoreFile &gestoreFile) : listaAttivita(listaAttivita), gestoreFile(gestoreFile) {}
 

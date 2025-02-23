@@ -5,7 +5,7 @@
 #include "AttivitaSemplice.h"
 
 void AttivitaSemplice::stampa() const {
-    std::cout << (completata ? "[X] " : "[ ] ") << descrizione;
+    std::cout << (completata ? "[X] " : "[ ] ") << descrizione << std::endl;
 }
 std::string AttivitaSemplice::serializza() const  {
     return "Semplice;" + descrizione + ";" + (completata ? "1" : "0");

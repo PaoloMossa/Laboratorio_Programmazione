@@ -35,6 +35,11 @@ int main() {
 
     InputHandler handler(prova, gestore);
     while (true) {
+
+        std::cout << std::endl << "LISTA ATTIVITÀ:" << std::endl;
+        prova.stampa();
+        std::cout << std::endl;
+
         std::string input;
         std::cout << "Inserire comando: ";
         std::cin >> input;

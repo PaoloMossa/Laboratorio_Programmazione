@@ -23,7 +23,7 @@ int main() {
 
     std::cout << std::endl << "Prova con GestoreFile" << std::endl;
     GestoreFile gestore("prova.txt");
-//    gestore.salvaSuFile(lista.getListaAttivita());
+
     auto listaCaricata = gestore.caricaDaFile();
     ListaAttivita prova;
     for (auto& attivita : listaCaricata) {
@@ -49,6 +49,12 @@ int main() {
         TipoInput convertedInput = stringToTipoInput(input);
         handler.handleInput(convertedInput);
     }
+
+    std::cout << "Salvare le modifiche? (y/n)" << std::endl;
+    std::string risposta;
+    std::cin >> risposta;
+    if (risposta != "n")
+        gestore.salvaSuFile(prova.getListaAttivita());
 
     return 0;
 }

@@ -47,63 +47,13 @@ cmake_ninja_workdir = /Users/paolomossa/CLionProjects/LabProgrammazione/cmake-bu
 #############################################
 # Order-only phony target for LabProgrammazione
 
-build cmake_object_order_depends_target_LabProgrammazione: phony || .
+build cmake_object_order_depends_target_LabProgrammazione: phony || cmake_object_order_depends_target_core
 
 build CMakeFiles/LabProgrammazione.dir/main.cpp.o: CXX_COMPILER__LabProgrammazione_unscanned_Debug /Users/paolomossa/CLionProjects/LabProgrammazione/main.cpp || cmake_object_order_depends_target_LabProgrammazione
   DEP_FILE = CMakeFiles/LabProgrammazione.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/LabProgrammazione.dir
   OBJECT_FILE_DIR = CMakeFiles/LabProgrammazione.dir
-  TARGET_COMPILE_PDB = CMakeFiles/LabProgrammazione.dir/
-  TARGET_PDB = LabProgrammazione.pdb
-
-build CMakeFiles/LabProgrammazione.dir/Domain/AttivitaSemplice.cpp.o: CXX_COMPILER__LabProgrammazione_unscanned_Debug /Users/paolomossa/CLionProjects/LabProgrammazione/Domain/AttivitaSemplice.cpp || cmake_object_order_depends_target_LabProgrammazione
-  DEP_FILE = CMakeFiles/LabProgrammazione.dir/Domain/AttivitaSemplice.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/LabProgrammazione.dir
-  OBJECT_FILE_DIR = CMakeFiles/LabProgrammazione.dir/Domain
-  TARGET_COMPILE_PDB = CMakeFiles/LabProgrammazione.dir/
-  TARGET_PDB = LabProgrammazione.pdb
-
-build CMakeFiles/LabProgrammazione.dir/Persistence/GestoreFile.cpp.o: CXX_COMPILER__LabProgrammazione_unscanned_Debug /Users/paolomossa/CLionProjects/LabProgrammazione/Persistence/GestoreFile.cpp || cmake_object_order_depends_target_LabProgrammazione
-  DEP_FILE = CMakeFiles/LabProgrammazione.dir/Persistence/GestoreFile.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/LabProgrammazione.dir
-  OBJECT_FILE_DIR = CMakeFiles/LabProgrammazione.dir/Persistence
-  TARGET_COMPILE_PDB = CMakeFiles/LabProgrammazione.dir/
-  TARGET_PDB = LabProgrammazione.pdb
-
-build CMakeFiles/LabProgrammazione.dir/Domain/ListaAttivita.cpp.o: CXX_COMPILER__LabProgrammazione_unscanned_Debug /Users/paolomossa/CLionProjects/LabProgrammazione/Domain/ListaAttivita.cpp || cmake_object_order_depends_target_LabProgrammazione
-  DEP_FILE = CMakeFiles/LabProgrammazione.dir/Domain/ListaAttivita.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/LabProgrammazione.dir
-  OBJECT_FILE_DIR = CMakeFiles/LabProgrammazione.dir/Domain
-  TARGET_COMPILE_PDB = CMakeFiles/LabProgrammazione.dir/
-  TARGET_PDB = LabProgrammazione.pdb
-
-build CMakeFiles/LabProgrammazione.dir/Domain/AttivitaImportante.cpp.o: CXX_COMPILER__LabProgrammazione_unscanned_Debug /Users/paolomossa/CLionProjects/LabProgrammazione/Domain/AttivitaImportante.cpp || cmake_object_order_depends_target_LabProgrammazione
-  DEP_FILE = CMakeFiles/LabProgrammazione.dir/Domain/AttivitaImportante.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/LabProgrammazione.dir
-  OBJECT_FILE_DIR = CMakeFiles/LabProgrammazione.dir/Domain
-  TARGET_COMPILE_PDB = CMakeFiles/LabProgrammazione.dir/
-  TARGET_PDB = LabProgrammazione.pdb
-
-build CMakeFiles/LabProgrammazione.dir/Control/InputHandler.cpp.o: CXX_COMPILER__LabProgrammazione_unscanned_Debug /Users/paolomossa/CLionProjects/LabProgrammazione/Control/InputHandler.cpp || cmake_object_order_depends_target_LabProgrammazione
-  DEP_FILE = CMakeFiles/LabProgrammazione.dir/Control/InputHandler.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/LabProgrammazione.dir
-  OBJECT_FILE_DIR = CMakeFiles/LabProgrammazione.dir/Control
-  TARGET_COMPILE_PDB = CMakeFiles/LabProgrammazione.dir/
-  TARGET_PDB = LabProgrammazione.pdb
-
-build CMakeFiles/LabProgrammazione.dir/Control/TipoInput.cpp.o: CXX_COMPILER__LabProgrammazione_unscanned_Debug /Users/paolomossa/CLionProjects/LabProgrammazione/Control/TipoInput.cpp || cmake_object_order_depends_target_LabProgrammazione
-  DEP_FILE = CMakeFiles/LabProgrammazione.dir/Control/TipoInput.cpp.o.d
-  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
-  OBJECT_DIR = CMakeFiles/LabProgrammazione.dir
-  OBJECT_FILE_DIR = CMakeFiles/LabProgrammazione.dir/Control
-  TARGET_COMPILE_PDB = CMakeFiles/LabProgrammazione.dir/
-  TARGET_PDB = LabProgrammazione.pdb
 
 
 # =============================================================================
@@ -113,14 +63,76 @@ build CMakeFiles/LabProgrammazione.dir/Control/TipoInput.cpp.o: CXX_COMPILER__La
 #############################################
 # Link the executable LabProgrammazione
 
-build LabProgrammazione: CXX_EXECUTABLE_LINKER__LabProgrammazione_Debug CMakeFiles/LabProgrammazione.dir/main.cpp.o CMakeFiles/LabProgrammazione.dir/Domain/AttivitaSemplice.cpp.o CMakeFiles/LabProgrammazione.dir/Persistence/GestoreFile.cpp.o CMakeFiles/LabProgrammazione.dir/Domain/ListaAttivita.cpp.o CMakeFiles/LabProgrammazione.dir/Domain/AttivitaImportante.cpp.o CMakeFiles/LabProgrammazione.dir/Control/InputHandler.cpp.o CMakeFiles/LabProgrammazione.dir/Control/TipoInput.cpp.o
+build LabProgrammazione: CXX_EXECUTABLE_LINKER__LabProgrammazione_Debug CMakeFiles/LabProgrammazione.dir/main.cpp.o | libcore.a || libcore.a
   FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk
+  LINK_LIBRARIES = libcore.a
   OBJECT_DIR = CMakeFiles/LabProgrammazione.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_COMPILE_PDB = CMakeFiles/LabProgrammazione.dir/
   TARGET_FILE = LabProgrammazione
-  TARGET_PDB = LabProgrammazione.pdb
+  TARGET_PDB = LabProgrammazione.dbg
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target core
+
+
+#############################################
+# Order-only phony target for core
+
+build cmake_object_order_depends_target_core: phony || .
+
+build CMakeFiles/core.dir/Domain/AttivitaSemplice.cpp.o: CXX_COMPILER__core_unscanned_Debug /Users/paolomossa/CLionProjects/LabProgrammazione/Domain/AttivitaSemplice.cpp || cmake_object_order_depends_target_core
+  DEP_FILE = CMakeFiles/core.dir/Domain/AttivitaSemplice.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/core.dir
+  OBJECT_FILE_DIR = CMakeFiles/core.dir/Domain
+
+build CMakeFiles/core.dir/Persistence/GestoreFile.cpp.o: CXX_COMPILER__core_unscanned_Debug /Users/paolomossa/CLionProjects/LabProgrammazione/Persistence/GestoreFile.cpp || cmake_object_order_depends_target_core
+  DEP_FILE = CMakeFiles/core.dir/Persistence/GestoreFile.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/core.dir
+  OBJECT_FILE_DIR = CMakeFiles/core.dir/Persistence
+
+build CMakeFiles/core.dir/Domain/ListaAttivita.cpp.o: CXX_COMPILER__core_unscanned_Debug /Users/paolomossa/CLionProjects/LabProgrammazione/Domain/ListaAttivita.cpp || cmake_object_order_depends_target_core
+  DEP_FILE = CMakeFiles/core.dir/Domain/ListaAttivita.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/core.dir
+  OBJECT_FILE_DIR = CMakeFiles/core.dir/Domain
+
+build CMakeFiles/core.dir/Domain/AttivitaImportante.cpp.o: CXX_COMPILER__core_unscanned_Debug /Users/paolomossa/CLionProjects/LabProgrammazione/Domain/AttivitaImportante.cpp || cmake_object_order_depends_target_core
+  DEP_FILE = CMakeFiles/core.dir/Domain/AttivitaImportante.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/core.dir
+  OBJECT_FILE_DIR = CMakeFiles/core.dir/Domain
+
+build CMakeFiles/core.dir/Control/InputHandler.cpp.o: CXX_COMPILER__core_unscanned_Debug /Users/paolomossa/CLionProjects/LabProgrammazione/Control/InputHandler.cpp || cmake_object_order_depends_target_core
+  DEP_FILE = CMakeFiles/core.dir/Control/InputHandler.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/core.dir
+  OBJECT_FILE_DIR = CMakeFiles/core.dir/Control
+
+build CMakeFiles/core.dir/Control/TipoInput.cpp.o: CXX_COMPILER__core_unscanned_Debug /Users/paolomossa/CLionProjects/LabProgrammazione/Control/TipoInput.cpp || cmake_object_order_depends_target_core
+  DEP_FILE = CMakeFiles/core.dir/Control/TipoInput.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/core.dir
+  OBJECT_FILE_DIR = CMakeFiles/core.dir/Control
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target core
+
+
+#############################################
+# Link the static library libcore.a
+
+build libcore.a: CXX_STATIC_LIBRARY_LINKER__core_Debug CMakeFiles/core.dir/Domain/AttivitaSemplice.cpp.o CMakeFiles/core.dir/Persistence/GestoreFile.cpp.o CMakeFiles/core.dir/Domain/ListaAttivita.cpp.o CMakeFiles/core.dir/Domain/AttivitaImportante.cpp.o CMakeFiles/core.dir/Control/InputHandler.cpp.o CMakeFiles/core.dir/Control/TipoInput.cpp.o
+  ARCH_FLAGS = -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = CMakeFiles/core.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = libcore.a
+  TARGET_PDB = core.a.dbg
 
 
 #############################################
@@ -145,8 +157,315 @@ build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
 
 build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
+
+#############################################
+# Utility command for list_install_components
+
+build list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build CMakeFiles/install.util: CUSTOM_COMMAND all
+  COMMAND = cd /Users/paolomossa/CLionProjects/LabProgrammazione/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build install: phony CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build CMakeFiles/install/local.util: CUSTOM_COMMAND all
+  COMMAND = cd /Users/paolomossa/CLionProjects/LabProgrammazione/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build install/local: phony CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
+  COMMAND = cd /Users/paolomossa/CLionProjects/LabProgrammazione/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build install/strip: phony CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/paolomossa/CLionProjects/LabProgrammazione/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for EXECUTABLE target runListaAttivitaTests
+
+
+#############################################
+# Order-only phony target for runListaAttivitaTests
+
+build cmake_object_order_depends_target_runListaAttivitaTests: phony || cmake_object_order_depends_target_core cmake_object_order_depends_target_gtest cmake_object_order_depends_target_gtest_main
+
+build test/CMakeFiles/runListaAttivitaTests.dir/runAllTests.cpp.o: CXX_COMPILER__runListaAttivitaTests_unscanned_Debug /Users/paolomossa/CLionProjects/LabProgrammazione/test/runAllTests.cpp || cmake_object_order_depends_target_runListaAttivitaTests
+  DEP_FILE = test/CMakeFiles/runListaAttivitaTests.dir/runAllTests.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/paolomossa/CLionProjects/LabProgrammazione/test/lib/googletest -isystem /Users/paolomossa/CLionProjects/LabProgrammazione/test/lib/googletest/include
+  OBJECT_DIR = test/CMakeFiles/runListaAttivitaTests.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/runListaAttivitaTests.dir
+
+build test/CMakeFiles/runListaAttivitaTests.dir/ListaAttivitaTest.cpp.o: CXX_COMPILER__runListaAttivitaTests_unscanned_Debug /Users/paolomossa/CLionProjects/LabProgrammazione/test/ListaAttivitaTest.cpp || cmake_object_order_depends_target_runListaAttivitaTests
+  DEP_FILE = test/CMakeFiles/runListaAttivitaTests.dir/ListaAttivitaTest.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/paolomossa/CLionProjects/LabProgrammazione/test/lib/googletest -isystem /Users/paolomossa/CLionProjects/LabProgrammazione/test/lib/googletest/include
+  OBJECT_DIR = test/CMakeFiles/runListaAttivitaTests.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/runListaAttivitaTests.dir
+
+build test/CMakeFiles/runListaAttivitaTests.dir/ListaAttivitaFixture.cpp.o: CXX_COMPILER__runListaAttivitaTests_unscanned_Debug /Users/paolomossa/CLionProjects/LabProgrammazione/test/ListaAttivitaFixture.cpp || cmake_object_order_depends_target_runListaAttivitaTests
+  DEP_FILE = test/CMakeFiles/runListaAttivitaTests.dir/ListaAttivitaFixture.cpp.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/paolomossa/CLionProjects/LabProgrammazione/test/lib/googletest -isystem /Users/paolomossa/CLionProjects/LabProgrammazione/test/lib/googletest/include
+  OBJECT_DIR = test/CMakeFiles/runListaAttivitaTests.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/runListaAttivitaTests.dir
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target runListaAttivitaTests
+
+
+#############################################
+# Link the executable test/runListaAttivitaTests
+
+build test/runListaAttivitaTests: CXX_EXECUTABLE_LINKER__runListaAttivitaTests_Debug test/CMakeFiles/runListaAttivitaTests.dir/runAllTests.cpp.o test/CMakeFiles/runListaAttivitaTests.dir/ListaAttivitaTest.cpp.o test/CMakeFiles/runListaAttivitaTests.dir/ListaAttivitaFixture.cpp.o | test/lib/googletest/libgtest_maind.a libcore.a test/lib/googletest/libgtestd.a || libcore.a test/lib/googletest/libgtest_maind.a test/lib/googletest/libgtestd.a
+  FLAGS = -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk
+  LINK_LIBRARIES = test/lib/googletest/libgtest_maind.a  libcore.a  test/lib/googletest/libgtestd.a
+  OBJECT_DIR = test/CMakeFiles/runListaAttivitaTests.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = test/runListaAttivitaTests
+  TARGET_PDB = runListaAttivitaTests.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build test/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/paolomossa/CLionProjects/LabProgrammazione/cmake-build-debug/test && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build test/edit_cache: phony test/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build test/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/paolomossa/CLionProjects/LabProgrammazione/cmake-build-debug/test && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake --regenerate-during-build -S/Users/paolomossa/CLionProjects/LabProgrammazione -B/Users/paolomossa/CLionProjects/LabProgrammazione/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build test/rebuild_cache: phony test/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build test/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build test/CMakeFiles/install.util: CUSTOM_COMMAND test/all
+  COMMAND = cd /Users/paolomossa/CLionProjects/LabProgrammazione/cmake-build-debug/test && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build test/install: phony test/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build test/CMakeFiles/install/local.util: CUSTOM_COMMAND test/all
+  COMMAND = cd /Users/paolomossa/CLionProjects/LabProgrammazione/cmake-build-debug/test && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build test/install/local: phony test/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build test/CMakeFiles/install/strip.util: CUSTOM_COMMAND test/all
+  COMMAND = cd /Users/paolomossa/CLionProjects/LabProgrammazione/cmake-build-debug/test && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build test/install/strip: phony test/CMakeFiles/install/strip.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/paolomossa/CLionProjects/LabProgrammazione/test/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gtest
+
+
+#############################################
+# Order-only phony target for gtest
+
+build cmake_object_order_depends_target_gtest: phony || .
+
+build test/lib/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o: CXX_COMPILER__gtest_unscanned_Debug /Users/paolomossa/CLionProjects/LabProgrammazione/test/lib/googletest/src/gtest-all.cc || cmake_object_order_depends_target_gtest
+  DEP_FILE = test/lib/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics   -DGTEST_HAS_PTHREAD=1
+  INCLUDES = -I/Users/paolomossa/CLionProjects/LabProgrammazione/test/lib/googletest/include -I/Users/paolomossa/CLionProjects/LabProgrammazione/test/lib/googletest
+  OBJECT_DIR = test/lib/googletest/CMakeFiles/gtest.dir
+  OBJECT_FILE_DIR = test/lib/googletest/CMakeFiles/gtest.dir/src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gtest
+
+
+#############################################
+# Link the static library test/lib/googletest/libgtestd.a
+
+build test/lib/googletest/libgtestd.a: CXX_STATIC_LIBRARY_LINKER__gtest_Debug test/lib/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+  ARCH_FLAGS = -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = test/lib/googletest/CMakeFiles/gtest.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = test/lib/googletest/libgtestd.a
+  TARGET_PDB = gtestd.a.dbg
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target gtest_main
+
+
+#############################################
+# Order-only phony target for gtest_main
+
+build cmake_object_order_depends_target_gtest_main: phony || cmake_object_order_depends_target_gtest
+
+build test/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o: CXX_COMPILER__gtest_main_unscanned_Debug /Users/paolomossa/CLionProjects/LabProgrammazione/test/lib/googletest/src/gtest_main.cc || cmake_object_order_depends_target_gtest_main
+  DEP_FILE = test/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o.d
+  FLAGS = -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics   -DGTEST_HAS_PTHREAD=1
+  INCLUDES = -I/Users/paolomossa/CLionProjects/LabProgrammazione/test/lib/googletest -isystem /Users/paolomossa/CLionProjects/LabProgrammazione/test/lib/googletest/include
+  OBJECT_DIR = test/lib/googletest/CMakeFiles/gtest_main.dir
+  OBJECT_FILE_DIR = test/lib/googletest/CMakeFiles/gtest_main.dir/src
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target gtest_main
+
+
+#############################################
+# Link the static library test/lib/googletest/libgtest_maind.a
+
+build test/lib/googletest/libgtest_maind.a: CXX_STATIC_LIBRARY_LINKER__gtest_main_Debug test/lib/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o || test/lib/googletest/libgtestd.a
+  ARCH_FLAGS = -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = test/lib/googletest/CMakeFiles/gtest_main.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = test/lib/googletest/libgtest_maind.a
+  TARGET_PDB = gtest_maind.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build test/lib/googletest/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/paolomossa/CLionProjects/LabProgrammazione/cmake-build-debug/test/lib/googletest && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build test/lib/googletest/edit_cache: phony test/lib/googletest/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build test/lib/googletest/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/paolomossa/CLionProjects/LabProgrammazione/cmake-build-debug/test/lib/googletest && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake --regenerate-during-build -S/Users/paolomossa/CLionProjects/LabProgrammazione -B/Users/paolomossa/CLionProjects/LabProgrammazione/cmake-build-debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build test/lib/googletest/rebuild_cache: phony test/lib/googletest/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for list_install_components
+
+build test/lib/googletest/list_install_components: phony
+
+
+#############################################
+# Utility command for install
+
+build test/lib/googletest/CMakeFiles/install.util: CUSTOM_COMMAND test/lib/googletest/all
+  COMMAND = cd /Users/paolomossa/CLionProjects/LabProgrammazione/cmake-build-debug/test/lib/googletest && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -P cmake_install.cmake
+  DESC = Install the project...
+  pool = console
+  restat = 1
+
+build test/lib/googletest/install: phony test/lib/googletest/CMakeFiles/install.util
+
+
+#############################################
+# Utility command for install/local
+
+build test/lib/googletest/CMakeFiles/install/local.util: CUSTOM_COMMAND test/lib/googletest/all
+  COMMAND = cd /Users/paolomossa/CLionProjects/LabProgrammazione/cmake-build-debug/test/lib/googletest && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+  DESC = Installing only the local directory...
+  pool = console
+  restat = 1
+
+build test/lib/googletest/install/local: phony test/lib/googletest/CMakeFiles/install/local.util
+
+
+#############################################
+# Utility command for install/strip
+
+build test/lib/googletest/CMakeFiles/install/strip.util: CUSTOM_COMMAND test/lib/googletest/all
+  COMMAND = cd /Users/paolomossa/CLionProjects/LabProgrammazione/cmake-build-debug/test/lib/googletest && /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+  DESC = Installing the project stripped...
+  pool = console
+  restat = 1
+
+build test/lib/googletest/install/strip: phony test/lib/googletest/CMakeFiles/install/strip.util
+
 # =============================================================================
 # Target aliases.
+
+build core: phony libcore.a
+
+build gtest: phony test/lib/googletest/libgtestd.a
+
+build gtest_main: phony test/lib/googletest/libgtest_maind.a
+
+build libgtest_maind.a: phony test/lib/googletest/libgtest_maind.a
+
+build libgtestd.a: phony test/lib/googletest/libgtestd.a
+
+build runListaAttivitaTests: phony test/runListaAttivitaTests
 
 # =============================================================================
 # Folder targets.
@@ -156,7 +475,21 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/paolomossa/CLionProjects/LabProgrammazione/cmake-build-debug
 
-build all: phony LabProgrammazione
+build all: phony LabProgrammazione libcore.a test/all
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/paolomossa/CLionProjects/LabProgrammazione/cmake-build-debug/test
+
+build test/all: phony test/runListaAttivitaTests test/lib/googletest/all
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/paolomossa/CLionProjects/LabProgrammazione/cmake-build-debug/test/lib/googletest
+
+build test/lib/googletest/all: phony test/lib/googletest/libgtestd.a test/lib/googletest/libgtest_maind.a
 
 # =============================================================================
 # Built-in targets
@@ -165,14 +498,14 @@ build all: phony LabProgrammazione
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCCompiler.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCCompilerABI.c /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCXXCompiler.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCompilerIdDetection.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeDetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeDetermineCompilerSupport.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeFindBinUtils.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeParseImplicitIncludeInfo.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeParseImplicitLinkInfo.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeParseLibraryArchitecture.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeSystem.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeTestCompilerCommon.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/ADSP-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/ARMCC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/ARMClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/AppleClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Borland-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Clang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Cray-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/CrayClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/GHS-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/GNU-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/HP-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/IAR-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Intel-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/LCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/MSVC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/NVHPC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/OrangeC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/PGI-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/PathScale-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/SCO-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/TI-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/TIClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Tasking-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Watcom-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/XL-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/zOS-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Internal/FeatureTesting.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Darwin-Determine-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/UnixPaths.cmake /Users/paolomossa/CLionProjects/LabProgrammazione/CMakeLists.txt CMakeCache.txt CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeCXXCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeDependentOption.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckCSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckIncludeFile.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckLibraryExists.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/FindPackageHandleStandardArgs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/FindPackageMessage.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/FindThreads.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/UnixPaths.cmake /Users/paolomossa/.vcpkg-clion/vcpkg$ (1)/scripts/buildsystems/vcpkg.cmake /Users/paolomossa/CLionProjects/LabProgrammazione/CMakeLists.txt /Users/paolomossa/CLionProjects/LabProgrammazione/test/CMakeLists.txt /Users/paolomossa/CLionProjects/LabProgrammazione/test/lib/googletest/CMakeLists.txt /Users/paolomossa/CLionProjects/LabProgrammazione/test/lib/googletest/cmake/gtest.pc.in /Users/paolomossa/CLionProjects/LabProgrammazione/test/lib/googletest/cmake/gtest_main.pc.in /Users/paolomossa/CLionProjects/LabProgrammazione/test/lib/googletest/cmake/internal_utils.cmake CMakeCache.txt CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeCXXCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCCompiler.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCCompilerABI.c /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCXXCompiler.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCompilerIdDetection.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeDetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeDetermineCompilerSupport.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeFindBinUtils.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeParseImplicitIncludeInfo.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeParseImplicitLinkInfo.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeParseLibraryArchitecture.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeSystem.cmake.in /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeTestCompilerCommon.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/ADSP-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/ARMCC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/ARMClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/AppleClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Borland-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Clang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Cray-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/CrayClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/GHS-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/GNU-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/HP-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/IAR-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Intel-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/LCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/MSVC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/NVHPC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/OrangeC-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/PGI-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/PathScale-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/SCO-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/TI-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/TIClang-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Tasking-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Watcom-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/XL-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/zOS-C-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Internal/FeatureTesting.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Darwin-Determine-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/UnixPaths.cmake /Users/paolomossa/CLionProjects/LabProgrammazione/CMakeLists.txt CMakeCache.txt CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeCXXCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake: phony
+build /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCXXInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeDependentOption.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeGenericSystem.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeInitializeConfigs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeLanguageInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeSystemSpecificInformation.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CMakeSystemSpecificInitialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckCSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckIncludeFile.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/CheckLibraryExists.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/CMakeCommonCompilerMacros.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Compiler/GNU.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/FindPackageHandleStandardArgs.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/FindPackageMessage.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/FindThreads.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-AppleClang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-AppleClang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang-C.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang-CXX.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Apple-Clang.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Darwin-Initialize.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/Darwin.cmake /Applications/CLion.app/Contents/bin/cmake/mac/aarch64/share/cmake-3.30/Modules/Platform/UnixPaths.cmake /Users/paolomossa/.vcpkg-clion/vcpkg$ (1)/scripts/buildsystems/vcpkg.cmake /Users/paolomossa/CLionProjects/LabProgrammazione/CMakeLists.txt /Users/paolomossa/CLionProjects/LabProgrammazione/test/CMakeLists.txt /Users/paolomossa/CLionProjects/LabProgrammazione/test/lib/googletest/CMakeLists.txt /Users/paolomossa/CLionProjects/LabProgrammazione/test/lib/googletest/cmake/gtest.pc.in /Users/paolomossa/CLionProjects/LabProgrammazione/test/lib/googletest/cmake/gtest_main.pc.in /Users/paolomossa/CLionProjects/LabProgrammazione/test/lib/googletest/cmake/internal_utils.cmake CMakeCache.txt CMakeFiles/3.30.5/CMakeCCompiler.cmake CMakeFiles/3.30.5/CMakeCXXCompiler.cmake CMakeFiles/3.30.5/CMakeSystem.cmake: phony
 
 
 #############################################

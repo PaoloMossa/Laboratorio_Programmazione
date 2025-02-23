@@ -26,6 +26,7 @@ void InputHandler::handleInput(TipoInput input) {
             break;
         case TipoInput::Completa:
             std::cout << "completa" << std::endl;
+            completaAttivita();
             break;
         case TipoInput::Non_valido:
             std::cout << "non valido" << std::endl;

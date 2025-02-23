@@ -12,6 +12,7 @@ enum class TipoInput {
     Modifica,
     Rimuovi,
     Esci,
+    Completa,
     Non_valido
 };
 

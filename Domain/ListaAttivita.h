@@ -24,8 +24,14 @@ public:
 
     void modificaAttivita(int indice);
 
+    void eliminaAttivita(int indice);
+
+    void completaAttivita(int indice);
+
     void stampa() const {
+        int i = 0;
         for (const auto& attivita : attivitaList) {
+            std::cout << i++ << ". ";
             attivita->stampa();
         }
     }

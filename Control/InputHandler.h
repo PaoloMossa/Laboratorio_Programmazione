@@ -15,10 +15,17 @@ private:
 
     void nuovaAttivita();
 
+    int getIndiceDaTastiera(std::string &testoDaVisualizzare);
+
     std::optional<int> stringToInt(const std::string &str);
 
     void modificaAttivita();
-    bool isValidIbdex(int indice);
+
+    void rimuoviAttivita();
+
+    void completaAttivita();
+
+    bool isValidIndex(int indice);
 public:
     InputHandler(ListaAttivita &listaAttivita, GestoreFile &gestoreFile) : listaAttivita(listaAttivita), gestoreFile(gestoreFile) {}
 

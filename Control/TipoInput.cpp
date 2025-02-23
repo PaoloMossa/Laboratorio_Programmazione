@@ -18,6 +18,9 @@ TipoInput stringToTipoInput(const std::string &input) {
         return TipoInput::Rimuovi;
     } else if (upperInput == "ESCI") {
         return TipoInput::Esci;
+    }
+    else if (upperInput == "COMPLETA") {
+        return TipoInput::Completa;
     } else {
         return TipoInput::Non_valido;
     }

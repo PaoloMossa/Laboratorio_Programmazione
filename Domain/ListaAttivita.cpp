@@ -18,3 +18,11 @@ void ListaAttivita::modificaAttivita(int indice) {
     std::getline(std::cin,nuovaDescrizione);
     attivitaList[indice]->setDescrizione(nuovaDescrizione);
 }
+
+void ListaAttivita::eliminaAttivita(int indice) {
+    attivitaList.erase(attivitaList.begin() + indice);
+}
+
+void ListaAttivita::completaAttivita(int indice) {
+    attivitaList[indice]->setCompletata(true);
+}

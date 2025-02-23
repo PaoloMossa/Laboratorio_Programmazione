@@ -7,32 +7,6 @@
 #include "../Domain/AttivitaImportante.h"
 #include "../Domain/AttivitaSemplice.h"
 
-void InputHandler::modificaAttivita() {
-    std::string indice;
-    std::cout << "Inserire l'indice dell'attività che si vuole modificare: ";
-    std::cin >> indice;
-    std::optional<int> indiceOpt = stringToInt(indice);
-    if (!indiceOpt.has_value()) {
-        std::cerr << "Errore durante la conversione." << std::endl;
-        return;
-    }
-    int indiceInt = indiceOpt.value();
-    if (isValidIbdex(indiceInt))
-        listaAttivita.modificaAttivita(indiceInt);
-}
-
-bool InputHandler::isValidIbdex(int indice) {
-    if (indice < 0) {
-        std::cerr << "Error: Index cannot be negative." << std::endl;
-        return false;
-    }
-    if (indice >= listaAttivita.size()) {
-        std::cerr << "Error: Index is out of bounds. Must be less than " << listaAttivita.size() << "." << std::endl;
-        return false;
-    }
-    return true;
-}
-
 void InputHandler::handleInput(TipoInput input) {
     switch(input) {
         case TipoInput::Nuovo:
@@ -41,15 +15,17 @@ void InputHandler::handleInput(TipoInput input) {
             break;
         case TipoInput::Modifica:
             std::cout << "modifica" << std::endl;
-
             modificaAttivita();
-
             break;
         case TipoInput::Rimuovi:
             std::cout << "rimuovi" << std::endl;
+            rimuoviAttivita();
             break;
         case TipoInput::Esci:
-            std::cout << "inserire exit" << std::endl;
+            std::cout << "inserire la scritta exit" << std::endl;
+            break;
+        case TipoInput::Completa:
+            std::cout << "completa" << std::endl;
             break;
         case TipoInput::Non_valido:
             std::cout << "non valido" << std::endl;
@@ -59,7 +35,7 @@ void InputHandler::handleInput(TipoInput input) {
     }
 }
 
-//FIXME The following method could be implemented in a Factoy Mehod object
+//FIXME The following method could be implemented in a Factoy Mehod class
 void InputHandler::nuovaAttivita() {
     std::string input;
     std::cout << "inserire tipo di attività (Semplice o Importante): ";
@@ -81,6 +57,52 @@ void InputHandler::nuovaAttivita() {
     std::getline(std::cin, input);
     nuovaAttivita->setDescrizione(input);
     listaAttivita.addAttivita(std::move(nuovaAttivita));
+}
+
+int InputHandler::getIndiceDaTastiera(std::string& testoDaVisualizzare) {
+    std::string indice;
+    std::cout << testoDaVisualizzare;
+    std::cin >> indice;
+    std::optional<int> indiceOpt = stringToInt(indice);
+    if (!indiceOpt.has_value()) {
+        std::cerr << "Errore durante la conversione." << std::endl;
+        return -1; //FIXME This could better be handled through exceptions, but no need to do it at the moment
+    }
+    int indiceInt = indiceOpt.value();
+    return indiceInt;
+}
+
+void InputHandler::modificaAttivita() {
+    std::string testoDaVisualizzare = "Inserire l'indice dell'attività che si vuole modificare: ";
+    int indice = getIndiceDaTastiera(testoDaVisualizzare);
+    if (isValidIndex(indice))
+        listaAttivita.modificaAttivita(indice);
+}
+
+void InputHandler::rimuoviAttivita() {
+    std::string testoDaVisualizzare = "Inserire l'indice dell'attività che si vuole rimuovere: ";
+    int indice = getIndiceDaTastiera(testoDaVisualizzare);
+    if (isValidIndex(indice))
+        listaAttivita.eliminaAttivita(indice);
+}
+
+void InputHandler::completaAttivita() {
+    std::string testoDaVisualizzare = "Inserire l'indice dell'attività che si vuole contrassegnare come completata: ";
+    int indice = getIndiceDaTastiera(testoDaVisualizzare);
+    if (isValidIndex(indice))
+        listaAttivita.completaAttivita(indice);
+}
+
+bool InputHandler::isValidIndex(int indice) {
+    if (indice < 0) {
+        std::cerr << "Error: Index cannot be negative." << std::endl;
+        return false;
+    }
+    if (indice >= listaAttivita.size()) {
+        std::cerr << "Error: Index is out of bounds. Must be less than " << listaAttivita.size() << "." << std::endl;
+        return false;
+    }
+    return true;
 }
 
 std::optional<int> InputHandler::stringToInt(const std::string& str) {

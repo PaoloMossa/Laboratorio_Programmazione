@@ -19,7 +19,7 @@ protected:
     }
 };
 
-TEST_F(InputHandlerSuite, TestIsValidIndexValid) {
+TEST_F(InputHandlerSuite, TestInputNonValido) {
     inputHandler->handleInput(TipoInput::Non_valido);
 
     //Must be verified if the fields of inputHandler didn't change, i.e. if listaAttivita.size() == 0
@@ -67,4 +67,26 @@ TEST_F(InputHandlerSuite, TestModificaAttivita) {
     std::cin.rdbuf(oldCout);
 
     ASSERT_EQ("test",listaAttivita.getListaAttivita()[0]->getDescrizione());
+}
+
+TEST_F(InputHandlerSuite, TestModificaIndiceNegativo) {
+    std::stringstream ss;
+    ss << "-1" << std::endl << "test" << std::endl; // Simulate user input "0" and then "test""
+    std::streambuf* oldCout = std::cin.rdbuf(ss.rdbuf());
+    inputHandler->handleInput(TipoInput::Modifica);
+    std::cin.rdbuf(oldCout);
+
+    //The description must not change and stay the same as is was in SetUp() method
+    ASSERT_EQ("Esempio di attività semplice",listaAttivita.getListaAttivita()[0]->getDescrizione());
+}
+
+TEST_F(InputHandlerSuite, TestModificaIndiceFuoriPortata) {
+    std::stringstream ss;
+    ss << "99999" << std::endl << "test" << std::endl; // Simulate user input "0" and then "test""
+    std::streambuf* oldCout = std::cin.rdbuf(ss.rdbuf());
+    inputHandler->handleInput(TipoInput::Modifica);
+    std::cin.rdbuf(oldCout);
+
+    //The description must not change and stay the same as is was in SetUp() method
+    ASSERT_EQ("Esempio di attività semplice",listaAttivita.getListaAttivita()[0]->getDescrizione());
 }

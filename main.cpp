@@ -33,7 +33,7 @@ int main() {
 
     std::cout << std::endl << "Prova con ClickHandler" << std::endl;
 
-    InputHandler handler(prova, gestore);
+    InputHandler handler(prova);
     while (true) {
 
         std::cout << std::endl << "LISTA ATTIVITÀ:" << std::endl;

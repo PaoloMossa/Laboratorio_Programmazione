@@ -11,7 +11,6 @@
 class InputHandler {
 private:
     ListaAttivita &listaAttivita;
-    GestoreFile &gestoreFile;
 
     void nuovaAttivita();
 
@@ -27,7 +26,7 @@ private:
 
     bool isValidIndex(int indice);
 public:
-    InputHandler(ListaAttivita &listaAttivita, GestoreFile &gestoreFile) : listaAttivita(listaAttivita), gestoreFile(gestoreFile) {}
+    InputHandler(ListaAttivita &listaAttivita) : listaAttivita(listaAttivita) {}
 
 
 

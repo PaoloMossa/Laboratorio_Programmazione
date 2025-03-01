@@ -1,4 +1,4 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja "-DCMAKE_TOOLCHAIN_FILE=/Users/paolomossa/.vcpkg-clion/vcpkg (1)/scripts/buildsystems/vcpkg.cmake" -G Ninja -S /Users/paolomossa/CLionProjects/LabProgrammazione -B /Users/paolomossa/CLionProjects/LabProgrammazione/cmake-build-debug
+/Users/paolomossa/Applications/CLion.app/Contents/bin/cmake/mac/aarch64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Users/paolomossa/Applications/CLion.app/Contents/bin/ninja/mac/aarch64/ninja "-DCMAKE_TOOLCHAIN_FILE=/Users/paolomossa/.vcpkg-clion/vcpkg (1)/scripts/buildsystems/vcpkg.cmake" -G Ninja -S /Users/paolomossa/CLionProjects/LabProgrammazione -B /Users/paolomossa/CLionProjects/LabProgrammazione/cmake-build-debug
 CMake Deprecation Warning at test/lib/googletest/CMakeLists.txt:53 (cmake_minimum_required):
   Compatibility with CMake < 3.5 will be removed from a future version of
   CMake.

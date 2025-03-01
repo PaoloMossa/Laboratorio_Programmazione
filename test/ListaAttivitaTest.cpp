@@ -1,7 +1,6 @@
 //
 // Created by Paolo Mossa on 23/02/25.
 //
-#include "lib/googletest-1.16.0/googletest/include/gtest/gtest.h"
 #include "../Domain/AttivitaSemplice.h"
 #include "../Domain/AttivitaImportante.h"
 #include "../Domain/ListaAttivita.h"
@@ -10,4 +9,14 @@
 #include "../Control/TipoInput.h"
 #include <memory>
 #include <fstream>
+#include <gtest/gtest.h>
 
+TEST(ListaAttivitaTest, AddAttivitaTest) {
+    auto nuovaAttivita = std::make_unique<AttivitaSemplice>(AttivitaSemplice("Esempio di attività semplice"));
+    std::unique_ptr<ListaAttivita> listaAttivita = std::make_unique<ListaAttivita>();
+    listaAttivita->addAttivita(std::move(nuovaAttivita));
+    auto listaRisultato = listaAttivita->getListaAttivita();
+    ASSERT_EQ(1, listaRisultato.size());
+    ASSERT_EQ("Esempio di attività semplice", listaRisultato[0]->getDescrizione());
+    ASSERT_FALSE(listaRisultato[0]->isCompletata());
+}

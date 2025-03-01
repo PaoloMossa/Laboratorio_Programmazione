@@ -24,3 +24,18 @@ TEST_F(ListaAttivitaSuite,TestConsistenzaVettore) {
 
     ASSERT_EQ(1,listaAttivita.size());
 }
+TEST_F(ListaAttivitaSuite, ModificaAttivita) {
+    std::stringstream ss;
+    ss << std::endl << "Modified Activity" << std::endl;
+    std::streambuf* oldCout = std::cin.rdbuf(ss.rdbuf());
+
+    listaAttivita.modificaAttivita(0);
+    std::cin.rdbuf(oldCout);
+
+    ASSERT_EQ("Modified Activity", listaAttivita.getListaAttivita()[0]->getDescrizione());
+}
+
+TEST_F(ListaAttivitaSuite, CompletaAttivita) {
+    listaAttivita.completaAttivita(0);
+    ASSERT_TRUE(listaAttivita.getListaAttivita()[0]->isCompletata());
+}

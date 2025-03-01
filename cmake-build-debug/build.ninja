@@ -206,6 +206,13 @@ build test/CMakeFiles/runListaAttivitaTests.dir/TipoInputTest.cpp.o: CXX_COMPILE
   OBJECT_DIR = test/CMakeFiles/runListaAttivitaTests.dir
   OBJECT_FILE_DIR = test/CMakeFiles/runListaAttivitaTests.dir
 
+build test/CMakeFiles/runListaAttivitaTests.dir/GestoreFileFixture.cpp.o: CXX_COMPILER__runListaAttivitaTests_unscanned_Debug /Users/paolomossa/CLionProjects/LabProgrammazione/test/GestoreFileFixture.cpp || cmake_object_order_depends_target_runListaAttivitaTests
+  DEP_FILE = test/CMakeFiles/runListaAttivitaTests.dir/GestoreFileFixture.cpp.o.d
+  FLAGS = -std=c++17 -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/paolomossa/CLionProjects/LabProgrammazione/test/lib/googletest -isystem /Users/paolomossa/CLionProjects/LabProgrammazione/test/lib/googletest/include
+  OBJECT_DIR = test/CMakeFiles/runListaAttivitaTests.dir
+  OBJECT_FILE_DIR = test/CMakeFiles/runListaAttivitaTests.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target runListaAttivitaTests
@@ -214,7 +221,7 @@ build test/CMakeFiles/runListaAttivitaTests.dir/TipoInputTest.cpp.o: CXX_COMPILE
 #############################################
 # Link the executable test/runListaAttivitaTests
 
-build test/runListaAttivitaTests: CXX_EXECUTABLE_LINKER__runListaAttivitaTests_Debug test/CMakeFiles/runListaAttivitaTests.dir/runAllTests.cpp.o test/CMakeFiles/runListaAttivitaTests.dir/ListaAttivitaTest.cpp.o test/CMakeFiles/runListaAttivitaTests.dir/ListaAttivitaFixture.cpp.o test/CMakeFiles/runListaAttivitaTests.dir/InputHandlerFixture.cpp.o test/CMakeFiles/runListaAttivitaTests.dir/TipoInputTest.cpp.o | test/lib/googletest/libgtest_maind.a libcore.a test/lib/googletest/libgtestd.a || libcore.a test/lib/googletest/libgtest_maind.a test/lib/googletest/libgtestd.a
+build test/runListaAttivitaTests: CXX_EXECUTABLE_LINKER__runListaAttivitaTests_Debug test/CMakeFiles/runListaAttivitaTests.dir/runAllTests.cpp.o test/CMakeFiles/runListaAttivitaTests.dir/ListaAttivitaTest.cpp.o test/CMakeFiles/runListaAttivitaTests.dir/ListaAttivitaFixture.cpp.o test/CMakeFiles/runListaAttivitaTests.dir/InputHandlerFixture.cpp.o test/CMakeFiles/runListaAttivitaTests.dir/TipoInputTest.cpp.o test/CMakeFiles/runListaAttivitaTests.dir/GestoreFileFixture.cpp.o | test/lib/googletest/libgtest_maind.a libcore.a test/lib/googletest/libgtestd.a || libcore.a test/lib/googletest/libgtest_maind.a test/lib/googletest/libgtestd.a
   FLAGS = -std=c++17 -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX15.2.sdk
   LINK_LIBRARIES = test/lib/googletest/libgtest_maind.a  libcore.a  test/lib/googletest/libgtestd.a
   OBJECT_DIR = test/CMakeFiles/runListaAttivitaTests.dir

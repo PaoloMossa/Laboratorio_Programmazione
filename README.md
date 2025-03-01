@@ -3,9 +3,13 @@ PROGRAMMA CON INTERFACCIA DA LINA DI COMANDO PER CREARE, MODIFICARE ED ELIMINARE
 -------- INPUT ACCETTATI (non sensibili alle maiuscole) -----------
 
 "nuovo" -> per creare una nuova attività
+
 "rimuovi" -> per rimuovere un'attività
+
 "modifica" -> per cambiare la descrizione di un'attività
+
 "completa" -> per contrassegnare un'attività come completata
+
 "exit" -> per chiudere correttamente il programma
 
 ------- DESCRIZIONE DELLE CLASSI ----------

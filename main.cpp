@@ -21,7 +21,7 @@ int main() {
     a.stampa();
 */
 
-    std::cout << std::endl << "Prova con GestoreFile" << std::endl;
+    std::cout << std::endl << "Prova GestoreFile" << std::endl;
     GestoreFile gestore("prova.txt");
 
     auto listaCaricata = gestore.caricaDaFile();
@@ -31,7 +31,7 @@ int main() {
     }
     prova.stampa();
 
-    std::cout << std::endl << "Prova con ClickHandler" << std::endl;
+    std::cout << std::endl << "Prova ClickHandler" << std::endl;
 
     InputHandler handler(prova);
     while (true) {

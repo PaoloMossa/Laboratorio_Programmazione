@@ -29,7 +29,6 @@ public:
     InputHandler(ListaAttivita &listaAttivita) : listaAttivita(listaAttivita) {}
 
 
-
     void handleInput(TipoInput input);
 
 };

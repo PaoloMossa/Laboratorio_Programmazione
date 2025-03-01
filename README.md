@@ -11,24 +11,31 @@ PROGRAMMA CON INTERFACCIA DA LINA DI COMANDO PER CREARE, MODIFICARE ED ELIMINARE
 ------- DESCRIZIONE DELLE CLASSI ----------
 
 main.cpp
+
 Istanzia un GestoreFile per la persistenza dei dati (salvare su disco alla chiusura e leggere da disco ad ogni avvio del programma), un ClickHandler (che gestisce gli input da tastiera dell'utente) e una ListaAttivita (struttura dati per la gestione di liste di attività).
 
 Control/TipoInput.h
+
 Enumerazione utilizzata per assegnare ad ogni comando da tastiera un valore. Utilizzato da InputHandler.h.
 
 Control/InputHandler
+
 Gestisce l'input da tastiera (convertito in forma di TipoInput). Possiede un riferimento al tipo ListaAttivita.
 
 Domain/Attivita.h
+
 Classe base, da cui derivano AttivitaSemplice e AttivitaImportante. Espone i metodi per convertire un oggetto in stringa da poter salvare su file e per istanziare un oggetto partendo da una stringa caricata da file.
 
 Domain/ListaAttivita.h
+
 Composta da un vettore di Attivita, si occupa di rappresentare un insieme di attività. Espone, tra l'altro, il metodo stampa(), per visualizzare sulla console la lista di attività rappresentata dall'oggetto in questione.
 
 Persistence/GestoreFile.h
+
 Carica le informazioni da file e si assume la responsabilità di salvare i cambiamenti, se richiesto.
 
 test/*
+
 All'interno della cartella sono contenuti i test di unità per le classi sopra e la libreria di Google Test.
 
 -------- ALTRE INFORMAZIONI -------------

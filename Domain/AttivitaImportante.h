@@ -4,6 +4,8 @@
 
 #ifndef ATTIVITAIMPORTANTE_H
 #define ATTIVITAIMPORTANTE_H
+#include <iostream>
+
 #include "Attivita.h"
 
 
@@ -22,6 +24,6 @@ public:
     std::unique_ptr<Attivita> creaDaSerializzazione(const std::string &riga) override;
 };
 
-
+void printInGreen(bool completata, std::string &descrizione);
 
 #endif //ATTIVITAIMPORTANTE_H

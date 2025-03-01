@@ -7,8 +7,10 @@
 #include <iostream>
 
 //FIXME find a better way to print colored text, so that it is not dependent on the os
+//RESOLVED through method printInGreen()
 void AttivitaImportante::stampa() const {
-    std::cout << (completata ? "[X] " : "[ ] ") << "\033[32m" << descrizione << "\033[0m" << std::endl;
+    std::string descr = getDescrizione();
+    printInGreen(completata,descr);
 }
 
 std::string AttivitaImportante::serializza() const {
@@ -30,4 +32,18 @@ std::unique_ptr<Attivita> AttivitaImportante::creaDaSerializzazione(const std::s
     AttivitaImportante a = AttivitaImportante(descrizione, completata);
     std::unique_ptr<Attivita> ptr = std::make_unique<AttivitaImportante>(a);
     return std::move(ptr);
+}
+void printInGreen(bool completata, std::string &descrizione) {
+#ifdef _WIN32
+    // Green color is FOREGROUND_GREEN (2)
+    HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+    SetConsoleTextAttribute(hConsole, FOREGROUND_GREEN);
+
+    std::cout << (completata ? "[X] " : "[ ] ") << descrizione << std::endl;
+
+    // Reset to default color (white)
+    setConsoleColor(FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE); // or 7
+#else
+    std::cout << (completata ? "[X] " : "[ ] ") << "\033[32m" << descrizione << "\033[0m" << std::endl;
+#endif
 }

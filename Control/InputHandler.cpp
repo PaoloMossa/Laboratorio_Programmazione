@@ -36,7 +36,7 @@ void InputHandler::handleInput(TipoInput input) {
     }
 }
 
-//FIXME The following method could be implemented in a Factoy Mehod class
+//FIXME The following method could implement a Factoy Mehod call, but there's no need to overcomplicate for only two types of activities
 void InputHandler::nuovaAttivita() {
     std::string input;
     std::cout << "inserire tipo di attività (Semplice o Importante): ";
